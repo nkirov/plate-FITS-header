@@ -1,0 +1,3639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Header</class>
+ <widget class="QDialog" name="Header">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>802</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FITS header 2.2/27.03.2012</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_file">
+       <property name="text">
+        <string>File</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="dir">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>data</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>/</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="file">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>POT015</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="sort_box">
+       <property name="text">
+        <string>Sort</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_instrument">
+       <property name="text">
+        <string>Plate</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="instrument">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>POT015</string>
+       </property>
+       <property name="maxLength">
+        <number>6</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="instrument_ext">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>_</string>
+       </property>
+       <property name="maxLength">
+        <number>2</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="plate">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>000317</string>
+       </property>
+       <property name="maxLength">
+        <number>8</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="prev">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Prev</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="next">
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Next</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="save">
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>85</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>85</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>85</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="Line" name="line_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="Line" name="line_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="maindata">
+     <property name="text">
+      <string>POT015 000317 191548+151320 19100802222101 SA 87               F 0101  30.0                    202001001</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="notes">
+     <property name="text">
+      <string>POT015 000317  Direct images</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="quality">
+     <property name="text">
+      <string>POT015 000317</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="observer">
+     <property name="text">
+      <string>POT015 000317	W.Muench</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>682</width>
+        <height>1817</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="3" column="1">
+          <widget class="QLabel" name="l04">
+           <property name="text">
+            <string>NAXIS1  </string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="l02">
+           <property name="text">
+            <string>BITPIX </string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLineEdit" name="BITPIX">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>16</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLineEdit" name="NAXIS">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>2</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLineEdit" name="SIMPLE">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="locale">
+            <locale language="English" country="UnitedStates"/>
+           </property>
+           <property name="text">
+            <string>T</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QLineEdit" name="NAXIS1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="text">
+            <string>18656</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="l03">
+           <property name="text">
+            <string>NAXIS </string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="c01">
+           <property name="text">
+            <string>file does conform to FITS standard [T/F]</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="c02">
+           <property name="text">
+            <string>number of bits per data pixel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLabel" name="c03">
+           <property name="text">
+            <string>number of data axes</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="4">
+          <widget class="QLabel" name="c04">
+           <property name="text">
+            <string>length of data axis 1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="4">
+          <widget class="QLabel" name="c05">
+           <property name="text">
+            <string>length of data axis 2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="3">
+          <widget class="QLineEdit" name="NAXIS2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="text">
+            <string>18542</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="l01">
+           <property name="text">
+            <string>SIMPLE</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLabel" name="l06">
+           <property name="text">
+            <string>EXTEND</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="4">
+          <widget class="QLabel" name="c06">
+           <property name="text">
+            <string>FITS dataset may contain extensions</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLabel" name="l07">
+           <property name="text">
+            <string>BZERO   </string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="4">
+          <widget class="QLabel" name="c07">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QLabel" name="l08">
+           <property name="text">
+            <string>BSCALE</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="4">
+          <widget class="QLabel" name="c08">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QLabel" name="l09">
+           <property name="text">
+            <string>INVERTED</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="4">
+          <widget class="QLabel" name="c09">
+           <property name="text">
+            <string>T - big-endian, F - little-endian</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="1">
+          <widget class="QLabel" name="l10">
+           <property name="text">
+            <string>DATE</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="4">
+          <widget class="QLabel" name="c10">
+           <property name="text">
+            <string>last change of file</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="3">
+          <widget class="QLineEdit" name="EXTEND">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="mouseTracking">
+            <bool>true</bool>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
+           <property name="inputMask">
+            <string/>
+           </property>
+           <property name="text">
+            <string>T</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="3">
+          <widget class="QLineEdit" name="BZERO">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>65536 </string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="3">
+          <widget class="QLineEdit" name="BSCALE">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="3">
+          <widget class="QLineEdit" name="INVERTED">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>T</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="1">
+          <widget class="QLabel" name="l11">
+           <property name="text">
+            <string>FILENAME</string>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="1">
+          <widget class="QLabel" name="l12">
+           <property name="text">
+            <string>PLATENUM</string>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="1">
+          <widget class="QLabel" name="l13">
+           <property name="text">
+            <string>PLATE-ID</string>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="1">
+          <widget class="QLabel" name="l14">
+           <property name="text">
+            <string>OBJECT</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_26">
+           <property name="text">
+            <string>1.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_27">
+           <property name="text">
+            <string>2.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_28">
+           <property name="text">
+            <string>3.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_29">
+           <property name="text">
+            <string>4.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_30">
+           <property name="text">
+            <string>5.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_31">
+           <property name="text">
+            <string>6.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_32">
+           <property name="text">
+            <string>7.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_33">
+           <property name="text">
+            <string>8.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="label_34">
+           <property name="text">
+            <string>9.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="0">
+          <widget class="QLabel" name="label_35">
+           <property name="text">
+            <string>10.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="0">
+          <widget class="QLabel" name="label_36">
+           <property name="text">
+            <string>11.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="0">
+          <widget class="QLabel" name="label_37">
+           <property name="text">
+            <string>12.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="0">
+          <widget class="QLabel" name="label_38">
+           <property name="text">
+            <string>13.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="0">
+          <widget class="QLabel" name="label_39">
+           <property name="text">
+            <string>15.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="4">
+          <widget class="QLabel" name="c11">
+           <property name="text">
+            <string>source file name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="4">
+          <widget class="QLabel" name="c12">
+           <property name="text">
+            <string>in original observing catalogue </string>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="4">
+          <widget class="QLabel" name="c13">
+           <property name="text">
+            <string>WFPDB plate identifier</string>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="4">
+          <widget class="QLabel" name="c14">
+           <property name="text">
+            <string>center star name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="3">
+          <widget class="QLineEdit" name="FILENAME">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="text">
+            <string>POT015_000317.fits</string>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="3">
+          <widget class="QLineEdit" name="PLATENUM">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="text">
+            <string>317</string>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="3">
+          <widget class="QLineEdit" name="PLATE_ID">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="text">
+            <string>POT015_000317</string>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="3">
+          <widget class="QLineEdit" name="OBJECT">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="36" column="1">
+          <widget class="QLabel" name="l35">
+           <property name="text">
+            <string>DISPERS</string>
+           </property>
+          </widget>
+         </item>
+         <item row="38" column="1">
+          <widget class="QLabel" name="l37">
+           <property name="text">
+            <string>PQUALITY</string>
+           </property>
+          </widget>
+         </item>
+         <item row="36" column="4">
+          <widget class="QLabel" name="c35">
+           <property name="text">
+            <string>dispersion [A/mm]</string>
+           </property>
+          </widget>
+         </item>
+         <item row="38" column="4">
+          <widget class="QLabel" name="c37">
+           <property name="text">
+            <string>plate quality</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="3">
+          <widget class="QDateTimeEdit" name="DATE">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="dateTime">
+            <datetime>
+             <hour>0</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2000</year>
+             <month>1</month>
+             <day>1</day>
+            </datetime>
+           </property>
+           <property name="displayFormat">
+            <string>yyyy-MM-dd hh:mm:ss</string>
+           </property>
+          </widget>
+         </item>
+         <item row="36" column="3">
+          <widget class="QLineEdit" name="DISPERS">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>0.0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="39" column="1">
+          <widget class="QLabel" name="l38">
+           <property name="text">
+            <string>PLATESZ</string>
+           </property>
+          </widget>
+         </item>
+         <item row="40" column="1">
+          <widget class="QLabel" name="l39">
+           <property name="text">
+            <string>CUNIT1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="41" column="1">
+          <widget class="QLabel" name="l40">
+           <property name="text">
+            <string>CUNIT2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="39" column="0">
+          <widget class="QLabel" name="label_95">
+           <property name="text">
+            <string>39.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="40" column="0">
+          <widget class="QLabel" name="label_96">
+           <property name="text">
+            <string>40.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="41" column="0">
+          <widget class="QLabel" name="label_97">
+           <property name="text">
+            <string>41.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="41" column="3">
+          <widget class="QDoubleSpinBox" name="CUNIT2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="decimals">
+            <number>4</number>
+           </property>
+           <property name="value">
+            <double>7.700000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="40" column="3">
+          <widget class="QDoubleSpinBox" name="CUNIT1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="decimals">
+            <number>4</number>
+           </property>
+           <property name="value">
+            <double>7.700000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="39" column="3">
+          <widget class="QLineEdit" name="PLATESZ">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>20x20</string>
+           </property>
+          </widget>
+         </item>
+         <item row="40" column="4">
+          <widget class="QLabel" name="c39">
+           <property name="text">
+            <string>X field size  [deg]</string>
+           </property>
+          </widget>
+         </item>
+         <item row="41" column="4">
+          <widget class="QLabel" name="c40">
+           <property name="text">
+            <string>Y field size [deg]</string>
+           </property>
+          </widget>
+         </item>
+         <item row="39" column="4">
+          <widget class="QLabel" name="c38">
+           <property name="text">
+            <string>plate size [cm]x[cm]</string>
+           </property>
+          </widget>
+         </item>
+         <item row="43" column="1">
+          <widget class="QLabel" name="l41">
+           <property name="text">
+            <string>OBSERVER</string>
+           </property>
+          </widget>
+         </item>
+         <item row="44" column="1">
+          <widget class="QLabel" name="l42">
+           <property name="text">
+            <string>OBSERVAT</string>
+           </property>
+          </widget>
+         </item>
+         <item row="45" column="1">
+          <widget class="QLabel" name="l43">
+           <property name="text">
+            <string>SITELONG</string>
+           </property>
+          </widget>
+         </item>
+         <item row="46" column="1">
+          <widget class="QLabel" name="l44">
+           <property name="text">
+            <string>SITELAT</string>
+           </property>
+          </widget>
+         </item>
+         <item row="43" column="0">
+          <widget class="QLabel" name="label_111">
+           <property name="text">
+            <string>42.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="44" column="0">
+          <widget class="QLabel" name="label_112">
+           <property name="text">
+            <string>43.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="45" column="0">
+          <widget class="QLabel" name="label_115">
+           <property name="text">
+            <string>44.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="46" column="0">
+          <widget class="QLabel" name="label_116">
+           <property name="text">
+            <string>45.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="43" column="3">
+          <widget class="QLineEdit" name="OBSERVER">
+           <property name="text">
+            <string>W. Muench</string>
+           </property>
+          </widget>
+         </item>
+         <item row="45" column="3">
+          <widget class="QLineEdit" name="SITELONG">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>-13:03:51.0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="46" column="3">
+          <widget class="QLineEdit" name="SITELAT">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="inputMask">
+            <string/>
+           </property>
+           <property name="text">
+            <string>+52:22:50.0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="47" column="1">
+          <widget class="QLabel" name="l45">
+           <property name="text">
+            <string>SITEALTI</string>
+           </property>
+          </widget>
+         </item>
+         <item row="48" column="1">
+          <widget class="QLabel" name="l46">
+           <property name="text">
+            <string>TELESCOP</string>
+           </property>
+          </widget>
+         </item>
+         <item row="49" column="1">
+          <widget class="QLabel" name="l47">
+           <property name="text">
+            <string>TELAPER</string>
+           </property>
+          </widget>
+         </item>
+         <item row="50" column="1">
+          <widget class="QLabel" name="l48">
+           <property name="text">
+            <string>TELFOC</string>
+           </property>
+          </widget>
+         </item>
+         <item row="51" column="1">
+          <widget class="QLabel" name="l49">
+           <property name="text">
+            <string>TELSCALE</string>
+           </property>
+          </widget>
+         </item>
+         <item row="47" column="0">
+          <widget class="QLabel" name="label_124">
+           <property name="text">
+            <string>46.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="48" column="0">
+          <widget class="QLabel" name="label_127">
+           <property name="text">
+            <string>47.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="49" column="0">
+          <widget class="QLabel" name="label_128">
+           <property name="text">
+            <string>48.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="50" column="0">
+          <widget class="QLabel" name="label_129">
+           <property name="text">
+            <string>49.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="51" column="0">
+          <widget class="QLabel" name="label_130">
+           <property name="text">
+            <string>50.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="47" column="3">
+          <widget class="QLineEdit" name="SITEALTI">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>107</string>
+           </property>
+          </widget>
+         </item>
+         <item row="49" column="3">
+          <widget class="QDoubleSpinBox" name="TELAPER">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>70</width>
+             <height>1111111</height>
+            </size>
+           </property>
+           <property name="value">
+            <double>0.150000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="50" column="3">
+          <widget class="QDoubleSpinBox" name="TELFOC">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>70</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="value">
+            <double>1.490000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="51" column="3">
+          <widget class="QDoubleSpinBox" name="TELSCALE">
+           <property name="maximumSize">
+            <size>
+             <width>70</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="maximum">
+            <double>1000.000000000000000</double>
+           </property>
+           <property name="value">
+            <double>138.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="48" column="4">
+          <widget class="QLabel" name="c46">
+           <property name="text">
+            <string>telescope name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="49" column="4">
+          <widget class="QLabel" name="c47">
+           <property name="text">
+            <string>clear aperture [m]</string>
+           </property>
+          </widget>
+         </item>
+         <item row="50" column="4">
+          <widget class="QLabel" name="c48">
+           <property name="text">
+            <string>focal length [m]</string>
+           </property>
+          </widget>
+         </item>
+         <item row="51" column="4">
+          <widget class="QLabel" name="c49">
+           <property name="text">
+            <string>telescope scale  [arcsec/mm]</string>
+           </property>
+          </widget>
+         </item>
+         <item row="53" column="1">
+          <widget class="QLabel" name="l50">
+           <property name="text">
+            <string>SCANNER</string>
+           </property>
+          </widget>
+         </item>
+         <item row="54" column="1">
+          <widget class="QLabel" name="l51">
+           <property name="text">
+            <string>SCANRES</string>
+           </property>
+          </widget>
+         </item>
+         <item row="57" column="1">
+          <widget class="QLabel" name="l54">
+           <property name="text">
+            <string>SCANHCUT</string>
+           </property>
+          </widget>
+         </item>
+         <item row="58" column="1">
+          <widget class="QLabel" name="l55">
+           <property name="text">
+            <string>SCANLCUT</string>
+           </property>
+          </widget>
+         </item>
+         <item row="59" column="1">
+          <widget class="QLabel" name="l56">
+           <property name="text">
+            <string>SCANGAM</string>
+           </property>
+          </widget>
+         </item>
+         <item row="60" column="1">
+          <widget class="QLabel" name="l57">
+           <property name="text">
+            <string>SCANFOC</string>
+           </property>
+          </widget>
+         </item>
+         <item row="53" column="0">
+          <widget class="QLabel" name="label_142">
+           <property name="text">
+            <string>51.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="54" column="0">
+          <widget class="QLabel" name="label_143">
+           <property name="text">
+            <string>52.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="57" column="0">
+          <widget class="QLabel" name="label_144">
+           <property name="text">
+            <string>55.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="58" column="0">
+          <widget class="QLabel" name="label_145">
+           <property name="text">
+            <string>56.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="59" column="0">
+          <widget class="QLabel" name="label_146">
+           <property name="text">
+            <string>57.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="60" column="0">
+          <widget class="QLabel" name="label_147">
+           <property name="text">
+            <string>58.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="54" column="3">
+          <widget class="QComboBox" name="SCANRES">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>2400</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1600</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1200</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>960</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>600</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="57" column="3">
+          <widget class="QSpinBox" name="SCANHCUT">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="maximum">
+            <number>1000</number>
+           </property>
+           <property name="value">
+            <number>255</number>
+           </property>
+          </widget>
+         </item>
+         <item row="58" column="3">
+          <widget class="QSpinBox" name="SCANLCUT">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="maximum">
+            <number>1000</number>
+           </property>
+          </widget>
+         </item>
+         <item row="59" column="3">
+          <widget class="QDoubleSpinBox" name="SCANGAM">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="value">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="53" column="4">
+          <widget class="QLabel" name="c50">
+           <property name="text">
+            <string>scanner name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="54" column="4">
+          <widget class="QLabel" name="c51">
+           <property name="text">
+            <string>scan resolution [dpi]</string>
+           </property>
+          </widget>
+         </item>
+         <item row="57" column="4">
+          <widget class="QLabel" name="c54">
+           <property name="text">
+            <string>scan lights value</string>
+           </property>
+          </widget>
+         </item>
+         <item row="58" column="4">
+          <widget class="QLabel" name="c55">
+           <property name="text">
+            <string>scan shadow value</string>
+           </property>
+          </widget>
+         </item>
+         <item row="59" column="4">
+          <widget class="QLabel" name="c56">
+           <property name="text">
+            <string>scan gamma value</string>
+           </property>
+          </widget>
+         </item>
+         <item row="61" column="4">
+          <widget class="QLabel" name="c58">
+           <property name="text">
+            <string>scan date and time</string>
+           </property>
+          </widget>
+         </item>
+         <item row="60" column="4">
+          <widget class="QLabel" name="c57">
+           <property name="text">
+            <string>scan focus</string>
+           </property>
+          </widget>
+         </item>
+         <item row="61" column="0">
+          <widget class="QLabel" name="label_156">
+           <property name="text">
+            <string>59.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="61" column="3">
+          <widget class="QDateTimeEdit" name="DATE_SCN">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="dateTime">
+            <datetime>
+             <hour>0</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2010</year>
+             <month>10</month>
+             <day>17</day>
+            </datetime>
+           </property>
+           <property name="displayFormat">
+            <string>yyyy-MM-dd hh:mm:ss</string>
+           </property>
+          </widget>
+         </item>
+         <item row="62" column="1">
+          <widget class="QLabel" name="l59">
+           <property name="text">
+            <string>AUTHOR</string>
+           </property>
+          </widget>
+         </item>
+         <item row="63" column="1">
+          <widget class="QLabel" name="l60">
+           <property name="text">
+            <string>ORIGIN</string>
+           </property>
+          </widget>
+         </item>
+         <item row="64" column="1">
+          <widget class="QLabel" name="l61">
+           <property name="text">
+            <string>REFERENC</string>
+           </property>
+          </widget>
+         </item>
+         <item row="65" column="1">
+          <widget class="QLabel" name="l62">
+           <property name="text">
+            <string>URL</string>
+           </property>
+          </widget>
+         </item>
+         <item row="62" column="0">
+          <widget class="QLabel" name="label_163">
+           <property name="text">
+            <string>60.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="63" column="0">
+          <widget class="QLabel" name="label_164">
+           <property name="text">
+            <string>61.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="64" column="0">
+          <widget class="QLabel" name="label_165">
+           <property name="text">
+            <string>62.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="65" column="0">
+          <widget class="QLabel" name="label_166">
+           <property name="text">
+            <string>63.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="62" column="3">
+          <widget class="QLineEdit" name="AUTHOR">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Tsvetkov, M.;Tsvetkova, K.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="63" column="3">
+          <widget class="QLineEdit" name="ORIGIN">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>AIP-WFPDB</string>
+           </property>
+          </widget>
+         </item>
+         <item row="64" column="3">
+          <widget class="QLineEdit" name="REFERENC">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>DFG STE 710-1/AOBJ:572189/20.11.2009</string>
+           </property>
+           <property name="maxLength">
+            <number>5000</number>
+           </property>
+          </widget>
+         </item>
+         <item row="65" column="3">
+          <widget class="QLineEdit" name="URL">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="38" column="3">
+          <widget class="QComboBox" name="PQUALITY">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="editable">
+            <bool>true</bool>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>good</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>bad</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>broken</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>4</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>5</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-3</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-4</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="48" column="3">
+          <widget class="QLineEdit" name="TELESCOP">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="60" column="3">
+          <widget class="QDoubleSpinBox" name="SCANFOC">
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="61" column="1">
+          <widget class="QLabel" name="l58">
+           <property name="text">
+            <string>DATE-SCN</string>
+           </property>
+          </widget>
+         </item>
+         <item row="43" column="4">
+          <widget class="QLabel" name="c41">
+           <property name="text">
+            <string>observer name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="44" column="4">
+          <widget class="QLabel" name="c42">
+           <property name="text">
+            <string>observatory name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="45" column="4">
+          <widget class="QLabel" name="c43">
+           <property name="text">
+            <string>longitude of the obsrvatory</string>
+           </property>
+          </widget>
+         </item>
+         <item row="46" column="4">
+          <widget class="QLabel" name="c44">
+           <property name="text">
+            <string>latitude of the observatory</string>
+           </property>
+          </widget>
+         </item>
+         <item row="47" column="4">
+          <widget class="QLabel" name="c45">
+           <property name="text">
+            <string>altitude of the observatory [m]</string>
+           </property>
+          </widget>
+         </item>
+         <item row="62" column="4">
+          <widget class="QLabel" name="c59">
+           <property name="text">
+            <string>author of scan</string>
+           </property>
+          </widget>
+         </item>
+         <item row="63" column="4">
+          <widget class="QLabel" name="c60">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="64" column="4">
+          <widget class="QLabel" name="c61">
+           <property name="text">
+            <string>reference</string>
+           </property>
+          </widget>
+         </item>
+         <item row="65" column="4">
+          <widget class="QLabel" name="c62">
+           <property name="text">
+            <string>base URL of VO Service to retrieve data</string>
+           </property>
+          </widget>
+         </item>
+         <item row="44" column="3">
+          <widget class="QComboBox" name="OBSERVAT">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="editable">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="53" column="3">
+          <widget class="QComboBox" name="SCANNER">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="mouseTracking">
+            <bool>false</bool>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
+           <property name="frame">
+            <bool>true</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>EPSON PERFECTION V700</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>EPSON PERFECTION V750</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>EPSON EXPRESSION 10000XL</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>EPSON EXPRESSION 1640XL</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="67" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>65.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="67" column="1">
+          <widget class="QLabel" name="l64">
+           <property name="text">
+            <string>DIR</string>
+           </property>
+          </widget>
+         </item>
+         <item row="67" column="3">
+          <widget class="QLineEdit" name="DIR">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>data POT015</string>
+           </property>
+          </widget>
+         </item>
+         <item row="67" column="4">
+          <widget class="QLabel" name="c64">
+           <property name="text">
+            <string>dir file</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="69" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>67.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="69" column="1">
+          <widget class="QLabel" name="l66">
+           <property name="text">
+            <string>END</string>
+           </property>
+          </widget>
+         </item>
+         <item row="68" column="1">
+          <widget class="QLabel" name="l65">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="68" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>66.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="68" column="3">
+          <widget class="QPlainTextEdit" name="TEXT"/>
+         </item>
+         <item row="16" column="1">
+          <widget class="QLabel" name="l15">
+           <property name="text">
+            <string>RA</string>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="4">
+          <widget class="QLabel" name="c15">
+           <property name="text">
+            <string>plate center in FK5</string>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="3">
+          <widget class="QLineEdit" name="RA">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>19:15:48</string>
+           </property>
+          </widget>
+         </item>
+         <item row="17" column="1">
+          <widget class="QLabel" name="l16">
+           <property name="text">
+            <string>DEC</string>
+           </property>
+          </widget>
+         </item>
+         <item row="17" column="4">
+          <widget class="QLabel" name="c16">
+           <property name="text">
+            <string>plate center in FK5</string>
+           </property>
+          </widget>
+         </item>
+         <item row="17" column="3">
+          <widget class="QLineEdit" name="DEC">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>+15:13:20</string>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>16.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="17" column="0">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>17.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="18" column="1">
+          <widget class="QLabel" name="l17">
+           <property name="text">
+            <string>EQUINOX</string>
+           </property>
+          </widget>
+         </item>
+         <item row="19" column="1">
+          <widget class="QLabel" name="l18">
+           <property name="text">
+            <string>RAEPOBS</string>
+           </property>
+          </widget>
+         </item>
+         <item row="18" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="text">
+            <string>18.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="18" column="4">
+          <widget class="QLabel" name="c17">
+           <property name="text">
+            <string>FK5</string>
+           </property>
+          </widget>
+         </item>
+         <item row="20" column="1">
+          <widget class="QLabel" name="l19">
+           <property name="text">
+            <string>DECEPOBS</string>
+           </property>
+          </widget>
+         </item>
+         <item row="19" column="0">
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>19.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="20" column="0">
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>20.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="21" column="1">
+          <widget class="QLabel" name="l20">
+           <property name="text">
+            <string>EPOCH</string>
+           </property>
+          </widget>
+         </item>
+         <item row="22" column="1">
+          <widget class="QLabel" name="l21">
+           <property name="text">
+            <string>DATE-OBS</string>
+           </property>
+          </widget>
+         </item>
+         <item row="19" column="3">
+          <widget class="QLineEdit" name="RAEPOBS">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>00:00:00</string>
+           </property>
+          </widget>
+         </item>
+         <item row="20" column="3">
+          <widget class="QLineEdit" name="DECEPOBS">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>+00:00:00</string>
+           </property>
+          </widget>
+         </item>
+         <item row="19" column="4">
+          <widget class="QLabel" name="c18">
+           <property name="text">
+            <string>plate center in the epoch of observation</string>
+           </property>
+          </widget>
+         </item>
+         <item row="20" column="4">
+          <widget class="QLabel" name="c19">
+           <property name="text">
+            <string>plate center in the epoch of observation</string>
+           </property>
+          </widget>
+         </item>
+         <item row="21" column="0">
+          <widget class="QLabel" name="label_24">
+           <property name="text">
+            <string>21.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="21" column="3">
+          <widget class="QDoubleSpinBox" name="EPOCH">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="decimals">
+            <number>6</number>
+           </property>
+           <property name="maximum">
+            <double>10000000.000000000000000</double>
+           </property>
+           <property name="value">
+            <double>1950.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="18" column="3">
+          <widget class="QDoubleSpinBox" name="EQUINOX">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="contextMenuPolicy">
+            <enum>Qt::PreventContextMenu</enum>
+           </property>
+           <property name="maximum">
+            <double>1000000.000000000000000</double>
+           </property>
+           <property name="value">
+            <double>2000.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="23" column="1">
+          <widget class="QLabel" name="l22">
+           <property name="text">
+            <string>TIME-OBS</string>
+           </property>
+          </widget>
+         </item>
+         <item row="22" column="0">
+          <widget class="QLabel" name="label_40">
+           <property name="text">
+            <string>22.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="22" column="3">
+          <widget class="QDateEdit" name="DATE_OBS">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="displayFormat">
+            <string>yyyy-MM-dd</string>
+           </property>
+          </widget>
+         </item>
+         <item row="21" column="4">
+          <widget class="QLabel" name="c20">
+           <property name="text">
+            <string>epoch of observation [years]</string>
+           </property>
+          </widget>
+         </item>
+         <item row="22" column="4">
+          <widget class="QLabel" name="c21">
+           <property name="text">
+            <string>date of observation</string>
+           </property>
+          </widget>
+         </item>
+         <item row="24" column="1">
+          <widget class="QLabel" name="l23">
+           <property name="text">
+            <string>EXPTIME</string>
+           </property>
+          </widget>
+         </item>
+         <item row="25" column="1">
+          <widget class="QLabel" name="l24">
+           <property name="text">
+            <string>TIME-END</string>
+           </property>
+          </widget>
+         </item>
+         <item row="23" column="0">
+          <widget class="QLabel" name="label_44">
+           <property name="text">
+            <string>23.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="24" column="0">
+          <widget class="QLabel" name="label_45">
+           <property name="text">
+            <string>24.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="25" column="0">
+          <widget class="QLabel" name="label_46">
+           <property name="text">
+            <string>25.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="23" column="4">
+          <widget class="QLabel" name="c22">
+           <property name="text">
+            <string>UT at start of observation</string>
+           </property>
+          </widget>
+         </item>
+         <item row="24" column="4">
+          <widget class="QLabel" name="c23">
+           <property name="text">
+            <string>exposure time [minutes]</string>
+           </property>
+          </widget>
+         </item>
+         <item row="25" column="4">
+          <widget class="QLabel" name="c24">
+           <property name="text">
+            <string>UT at end of observation</string>
+           </property>
+          </widget>
+         </item>
+         <item row="26" column="1">
+          <widget class="QLabel" name="l25">
+           <property name="text">
+            <string>UT</string>
+           </property>
+          </widget>
+         </item>
+         <item row="24" column="3">
+          <widget class="QDoubleSpinBox" name="EXPTIME">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="maximum">
+            <double>1000.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="25" column="3">
+          <widget class="QTimeEdit" name="TIME_END">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+          </widget>
+         </item>
+         <item row="23" column="3">
+          <widget class="QTimeEdit" name="TIME_OBS">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="27" column="1">
+          <widget class="QLabel" name="l26">
+           <property name="text">
+            <string>JD</string>
+           </property>
+          </widget>
+         </item>
+         <item row="28" column="1">
+          <widget class="QLabel" name="l27">
+           <property name="text">
+            <string>ST</string>
+           </property>
+          </widget>
+         </item>
+         <item row="26" column="4">
+          <widget class="QLabel" name="c25">
+           <property name="text">
+            <string>date and UT at mean epoch </string>
+           </property>
+          </widget>
+         </item>
+         <item row="27" column="4">
+          <widget class="QLabel" name="c26">
+           <property name="text">
+            <string>JD at mean epoch</string>
+           </property>
+          </widget>
+         </item>
+         <item row="28" column="4">
+          <widget class="QLabel" name="c27">
+           <property name="text">
+            <string>ST at start of the observation</string>
+           </property>
+          </widget>
+         </item>
+         <item row="26" column="3">
+          <widget class="QDateTimeEdit" name="UT">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="displayFormat">
+            <string>yyyy-MM-dd HH:mm:ss</string>
+           </property>
+          </widget>
+         </item>
+         <item row="27" column="3">
+          <widget class="QDoubleSpinBox" name="JD">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="decimals">
+            <number>6</number>
+           </property>
+           <property name="maximum">
+            <double>99999999.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="28" column="3">
+          <widget class="QTimeEdit" name="ST">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="26" column="0">
+          <widget class="QLabel" name="label_54">
+           <property name="text">
+            <string>26.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="27" column="0">
+          <widget class="QLabel" name="label_55">
+           <property name="text">
+            <string>27.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="28" column="0">
+          <widget class="QLabel" name="label_56">
+           <property name="text">
+            <string>28.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="29" column="1">
+          <widget class="QLabel" name="l28">
+           <property name="text">
+            <string>MULTIEXP</string>
+           </property>
+          </widget>
+         </item>
+         <item row="30" column="1">
+          <widget class="QLabel" name="l29">
+           <property name="text">
+            <string>DETNAM</string>
+           </property>
+          </widget>
+         </item>
+         <item row="29" column="0">
+          <widget class="QLabel" name="label_59">
+           <property name="text">
+            <string>29.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="29" column="3">
+          <widget class="QSpinBox" name="MULTIEXP">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="value">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item row="29" column="4">
+          <widget class="QLabel" name="c28">
+           <property name="text">
+            <string>number of exposure of the plate</string>
+           </property>
+          </widget>
+         </item>
+         <item row="31" column="1">
+          <widget class="QLabel" name="l30">
+           <property name="text">
+            <string>EMULSION</string>
+           </property>
+          </widget>
+         </item>
+         <item row="32" column="1">
+          <widget class="QLabel" name="l31">
+           <property name="text">
+            <string>FILTER</string>
+           </property>
+          </widget>
+         </item>
+         <item row="30" column="0">
+          <widget class="QLabel" name="label_63">
+           <property name="text">
+            <string>30.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="30" column="4">
+          <widget class="QLabel" name="c29">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="31" column="4">
+          <widget class="QLabel" name="c30">
+           <property name="text">
+            <string>emulsion type</string>
+           </property>
+          </widget>
+         </item>
+         <item row="31" column="0">
+          <widget class="QLabel" name="label_66">
+           <property name="text">
+            <string>31.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="32" column="0">
+          <widget class="QLabel" name="label_67">
+           <property name="text">
+            <string>32.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="32" column="4">
+          <widget class="QLabel" name="c31">
+           <property name="text">
+            <string>filter type</string>
+           </property>
+          </widget>
+         </item>
+         <item row="30" column="3">
+          <widget class="QLineEdit" name="DETNAM">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Photographic Plate</string>
+           </property>
+          </widget>
+         </item>
+         <item row="33" column="1">
+          <widget class="QLabel" name="l32">
+           <property name="text">
+            <string>COLOR</string>
+           </property>
+          </widget>
+         </item>
+         <item row="34" column="1">
+          <widget class="QLabel" name="l33">
+           <property name="text">
+            <string>PRIZMANG</string>
+           </property>
+          </widget>
+         </item>
+         <item row="35" column="1">
+          <widget class="QLabel" name="l34">
+           <property name="text">
+            <string>INSTRUME</string>
+           </property>
+          </widget>
+         </item>
+         <item row="33" column="0">
+          <widget class="QLabel" name="label_72">
+           <property name="text">
+            <string>33.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="33" column="4">
+          <widget class="QLabel" name="c32">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="31" column="3">
+          <widget class="QLineEdit" name="EMULSION">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="32" column="3">
+          <widget class="QLineEdit" name="FILTER">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="33" column="3">
+          <widget class="QLineEdit" name="COLOR">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="34" column="0">
+          <widget class="QLabel" name="label_75">
+           <property name="text">
+            <string>34.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="35" column="0">
+          <widget class="QLabel" name="label_76">
+           <property name="text">
+            <string>35.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="34" column="4">
+          <widget class="QLabel" name="c33">
+           <property name="text">
+            <string>prism angle</string>
+           </property>
+          </widget>
+         </item>
+         <item row="35" column="4">
+          <widget class="QLabel" name="c34">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="36" column="0">
+          <widget class="QLabel" name="label_74">
+           <property name="text">
+            <string>36.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="37" column="1">
+          <widget class="QLabel" name="l36">
+           <property name="text">
+            <string>WEDGE</string>
+           </property>
+          </widget>
+         </item>
+         <item row="34" column="3">
+          <widget class="QLineEdit" name="PRIZMANG">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>NO</string>
+           </property>
+          </widget>
+         </item>
+         <item row="35" column="3">
+          <widget class="QLineEdit" name="INSTRUME">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="38" column="0">
+          <widget class="QLabel" name="label_77">
+           <property name="text">
+            <string>38.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="37" column="0">
+          <widget class="QLabel" name="label_78">
+           <property name="text">
+            <string>37.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="37" column="4">
+          <widget class="QLabel" name="c36">
+           <property name="text">
+            <string>type of photometric step-wedge</string>
+           </property>
+          </widget>
+         </item>
+         <item row="37" column="3">
+          <widget class="QLineEdit" name="WEDGE">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="55" column="1">
+          <widget class="QLabel" name="l52">
+           <property name="text">
+            <string>XPIXELSZ</string>
+           </property>
+          </widget>
+         </item>
+         <item row="56" column="1">
+          <widget class="QLabel" name="l53">
+           <property name="text">
+            <string>XPIXELSZ</string>
+           </property>
+          </widget>
+         </item>
+         <item row="55" column="0">
+          <widget class="QLabel" name="label_85">
+           <property name="text">
+            <string>53.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="56" column="0">
+          <widget class="QLabel" name="label_86">
+           <property name="text">
+            <string>54.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="66" column="1">
+          <widget class="QLabel" name="l63">
+           <property name="text">
+            <string>COMMENT</string>
+           </property>
+          </widget>
+         </item>
+         <item row="66" column="0">
+          <widget class="QLabel" name="label_88">
+           <property name="text">
+            <string>64.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="66" column="3">
+          <widget class="QLineEdit" name="COMMENT"/>
+         </item>
+         <item row="55" column="3">
+          <widget class="QDoubleSpinBox" name="XPIXELSZ">
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="decimals">
+            <number>4</number>
+           </property>
+          </widget>
+         </item>
+         <item row="56" column="3">
+          <widget class="QDoubleSpinBox" name="YPIXELSZ">
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>170</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>212</red>
+                 <green>208</green>
+                 <blue>200</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="decimals">
+            <number>4</number>
+           </property>
+          </widget>
+         </item>
+         <item row="55" column="4">
+          <widget class="QLabel" name="c52">
+           <property name="text">
+            <string>X pixel size [microns] </string>
+           </property>
+          </widget>
+         </item>
+         <item row="56" column="4">
+          <widget class="QLabel" name="c53">
+           <property name="text">
+            <string>Y pixel size [microns] </string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLabel" name="l05">
+           <property name="text">
+            <string>NAXIS2  </string>
+           </property>
+          </widget>
+         </item>
+         <item row="66" column="4">
+          <widget class="QLabel" name="c63">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="1">
+          <widget class="QLabel" name="l67">
+           <property name="text">
+            <string>FIELD</string>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>14.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="4">
+          <widget class="QLabel" name="c67">
+           <property name="text">
+            <string>field name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="3">
+          <widget class="QLineEdit" name="FIELD">
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>SA 87</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="4">
+          <widget class="Line" name="line">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="3">
+          <widget class="Line" name="line_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="Line" name="line_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="Line" name="line_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="42" column="1">
+          <widget class="Line" name="line_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="42" column="0">
+          <widget class="Line" name="line_9">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="42" column="3">
+          <widget class="Line" name="line_10">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="42" column="4">
+          <widget class="Line" name="line_11">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="52" column="1">
+          <widget class="Line" name="line_12">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="52" column="0">
+          <widget class="Line" name="line_13">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="52" column="3">
+          <widget class="Line" name="line_14">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="52" column="4">
+          <widget class="Line" name="line_15">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>15</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>15</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>
