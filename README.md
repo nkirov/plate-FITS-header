@@ -5,8 +5,7 @@ Flexible Image Transport System or FITS is a digital file format used to store, 
 
 Creation of complete FITS header is an important part of plates digitization. Because the photographic plates are a specific type of astronomical observations, we attempt to make a standard of the keywords in the FITS header, specially for astronomical photographic plates. The corresponding software implementation for this standard is also created. It is written in C++ using Qt cross platform application. When we generate FITS header for scanned plates, WFPDB catalogues are used for obtaining the most important meta-data for the plates. 
 
-[N. Kirov, M. Tsvetkov, K. Tsvetkova, Software Tools for Digitization of Astronomical Photographic Plates, Serdica Journal of Computing, 6 (1), (2012), 67-76.]
-(http://nikolay.kirov.be/zip/067-076.pdfN.) 
+[N. Kirov, M. Tsvetkov, K. Tsvetkova, Software Tools for Digitization of Astronomical Photographic Plates, Serdica Journal of Computing, 6 (1), (2012), 67-76.](http://nikolay.kirov.be/zip/067-076.pdfN)
 
 [Kirov, M. Tsvetkov, K. Tsvetkova, Technology for digitization of astronomical photographic plates, In: Proceedings of the 8th Annual International Conference on Computer Science and Education in Computer Science, 5–8 July 2012, Boston, USA, 109-114.](http://nikolay.kirov.be/zip/nkirov_boston_updated.pdf)
 
