@@ -1,5 +1,5 @@
 #include <QDebug>
-#include <Qfile>
+#include <QFile>
 #include <QStringList>
 
 #include "header.h"
