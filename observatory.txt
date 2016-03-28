@@ -1,3 +1,5 @@
+ESO La Silla
+-70:43:48.0 -29:15:24.0 2347
 AO Potsdam
 -13:03:51.0 +52:22:50.0 107
 Bonn Hoher List, Germany
@@ -12,3 +14,13 @@ Dr. Remeis Obs., Bamberg
 +49:53:04.0 +10:53:17.0 283
 Harvard Obs., Boyden Station
 +26:24:18.0 -29:02:18.0 1387
+Rozhen Obs., Bulgaria
++24:44:18.0 +41:41:48.0 1745
+Konkoly obs., Hungary
++19:53:42.0 +47:55:06.0 958
+Bucharest Astr. Observatory
++26:05:48.0 +44:24:48.0 81
+Hamburg-Bergedorf Obs., Germany
++10:14:29.0 +53:28:48.0 40
+Mykolayiv Observatory, Ukraine 
++32:07:30.0 +46:58:18.0 55
