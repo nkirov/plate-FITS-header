@@ -274,13 +274,15 @@ QString Header::dec(QString s)
 }
 
 QTime Header::time_obs(QString s)
-{ 
+{
+    QTime ttt(0,0,0);
 	for (int i=0; i < maindata.size(); i++)
-		if (maindata[i].left(IDENT) == s) 	
-			return QTime(maindata[i].mid(36,2).toInt(),
+		if (maindata[i].left(IDENT) == s)
+            ttt = QTime(maindata[i].mid(36,2).toInt(),
 				     maindata[i].mid(38,2).toInt(),
-				     maindata[i].mid(40,2).toInt());
-	return QTime(0,0,0);
+				     maindata[i].mid(40,2).toInt()); 
+qDebug() << "time_obs " << ttt << s;
+    return ttt;
 }
 
 QString Header::platesz(QString s)
@@ -596,7 +598,7 @@ ui.EXTEND->setText(lineValue(line)); line = text.readLine();
 ui.BZERO->setText(lineValue(line)); line = text.readLine(); 
 ui.BSCALE->setText(lineValue(line)); line = text.readLine(); 
 ui.INVERTED->setText(lineValue(line)); line = text.readLine(); 
-ui.DATE->setDateTime(QDateTime::fromString(lineValue(line), "yyyy-MM-dd hh:mm:ss")); line = text.readLine(); 
+ui.DATE->setDateTime(QDateTime::fromString(lineValue(line), "yyyy-MM-dd HH:mm:ss")); line = text.readLine(); 
 ui.FILENAME->setText(lineValue(line)); line = text.readLine(); 
 ui.PLATENUM->setText(lineValue(line)); line = text.readLine(); 
 ui.PLATE_ID->setText(lineValue(line)); line = text.readLine(); 
@@ -609,12 +611,12 @@ ui.RAEPOBS->setText(lineValue(line)); line = text.readLine();
 ui.DECEPOBS->setText(lineValue(line)); line = text.readLine(); 
 ui.EPOCH->setValue(lineValue(line).toDouble()); line = text.readLine(); 
 ui.DATE_OBS->setDate(QDate::fromString(lineValue(line), "yyyy-MM-dd")); line = text.readLine(); 
-ui.TIME_OBS->setTime(QTime::fromString(lineValue(line), "hh:mm:ss")); line = text.readLine(); 
+ui.TIME_OBS->setTime(QTime::fromString(lineValue(line), "HH:mm:ss")); line = text.readLine(); 
 ui.EXPTIME->setValue(lineValue(line).toDouble()); line = text.readLine(); 
-ui.TIME_END->setTime(QTime::fromString(lineValue(line), "hh:mm:ss")); line = text.readLine(); 
+ui.TIME_END->setTime(QTime::fromString(lineValue(line), "HH:mm:ss")); line = text.readLine(); 
 ui.UT->setDateTime(QDateTime::fromString(lineValue(line), "yyyy-MM-dd hh:mm:ss")); line = text.readLine(); 
 ui.JD->setValue(lineValue(line).toDouble()); line = text.readLine(); 
-ui.ST->setTime(QTime::fromString(lineValue(line), "hh:mm:ss")); line = text.readLine(); 
+ui.ST->setTime(QTime::fromString(lineValue(line), "HH:mm:ss")); line = text.readLine(); 
 ui.MULTIEXP->setValue(lineValue(line).toInt()); line = text.readLine(); 
 ui.DETNAM->setText(lineValue(line)); line = text.readLine(); 
 ui.EMULSION->setText(lineValue(line)); line = text.readLine(); 
@@ -645,7 +647,7 @@ ui.SCANHCUT->setValue(lineValue(line).toInt()); line = text.readLine();
 ui.SCANLCUT->setValue(lineValue(line).toInt()); line = text.readLine(); 
 ui.SCANGAM->setValue(lineValue(line).toDouble()); line = text.readLine(); 
 ui.SCANFOC->setValue(lineValue(line).toDouble()); line = text.readLine(); 
-ui.DATE_SCN->setDateTime(QDateTime::fromString(lineValue(line), "yyyy-MM-dd hh:mm:ss")); line = text.readLine(); 
+ui.DATE_SCN->setDateTime(QDateTime::fromString(lineValue(line), "yyyy-MM-dd HH:mm:ss")); line = text.readLine(); 
 ui.AUTHOR->setText(lineValue(line)); line = text.readLine(); 
 ui.ORIGIN->setText(lineValue(line)); line = text.readLine(); 
 ui.REFERENC->setText(lineValue(line)); line = text.readLine(); 

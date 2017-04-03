@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>720</width>
-    <height>802</height>
+    <width>750</width>
+    <height>633</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,12 +22,6 @@
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <layout class="QHBoxLayout">
-     <property name="spacing">
-      <number>6</number>
-     </property>
-     <property name="margin">
-      <number>0</number>
-     </property>
      <item>
       <widget class="QLabel" name="label_file">
        <property name="text">
@@ -330,9 +324,9 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>-953</y>
-        <width>682</width>
-        <height>1817</height>
+        <y>-591</y>
+        <width>709</width>
+        <height>2257</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
@@ -2860,6 +2854,9 @@
              </disabled>
             </palette>
            </property>
+           <property name="displayFormat">
+            <string>HH:mm:ss</string>
+           </property>
           </widget>
          </item>
          <item row="23" column="3">
@@ -2869,6 +2866,9 @@
              <width>160</width>
              <height>16777215</height>
             </size>
+           </property>
+           <property name="displayFormat">
+            <string>HH:mm:ss</string>
            </property>
           </widget>
          </item>
@@ -3017,6 +3017,9 @@
              <width>160</width>
              <height>16777215</height>
             </size>
+           </property>
+           <property name="displayFormat">
+            <string>HH:mm:ss</string>
            </property>
           </widget>
          </item>
