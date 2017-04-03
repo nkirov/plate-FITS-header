@@ -14,7 +14,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>FITS header 2.2/27.03.2012</string>
+   <string>FITS header 2.3/3.04.2017</string>
   </property>
   <property name="sizeGripEnabled">
    <bool>true</bool>
@@ -324,7 +324,7 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>-591</y>
+        <y>0</y>
         <width>709</width>
         <height>2257</height>
        </rect>
